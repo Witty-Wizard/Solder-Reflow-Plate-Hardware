@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 0)
+  (lib (name "Solder-Ref-easyedapro")(type "KiCad")(uri "${KIPRJMOD}/Solder-Ref-easyedapro.kicad_sym")(options "")(descr ""))
+)

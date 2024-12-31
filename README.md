@@ -1,19 +1,5 @@
 # **Solder Reflow Plate**
 
-###### By AfterEarth Ltd
-
-## As Seen On GreatScott! 
-
-This project has recently featured on a DIY or BUY GreatScott! video.
-
-Check it out here - [The Best way to reflow solder? Hot Plate to the rescue! DIY or Buy](https://www.youtube.com/watch?v=QarizoUnRfk)
-
-## UPDATE!!!
-
-Join the [DISCORD!](https://discord.gg/YzhG6FcCRA)
-
-Checkout the new Ver 3.0 design. Very similar to Ver 2.4 but now comes with ATmega4809 as its availability is much better than the 328p at the moment. Code is still in development but the board designs are available in the Board Versions Folder.
-
 ## Versions
 
 - 70mm x 50mm (Ver 2.4)
@@ -27,6 +13,10 @@ Checkout the new Ver 3.0 design. Very similar to Ver 2.4 but now comes with ATme
   - 5.5mm x 2.5mm Barrel Jack
   - 0.91" OLED Display
   - ATmega4809 Microprocessor
+
+## About this fork
+This fork seprates the Firmware and the Hardware fils. It also migrates the Hardware files form Easyeda to KiCAD.
+**Happy Hacking!!**
 
 ## About the Project
 
@@ -49,18 +39,8 @@ Hence the Solder Reflow Plate was born, a PCB-based, MOSFET controlled heater, p
 And so, this nerd bestows upon the world his project, fully open-source and hackable.
 Here's hoping that it may be used to develop skills, build custom circuit boards, and make quality designs possible to all!
 
-## Purchase
-
-- Register your email address at [www.solderreflowplate.co.uk](https://www.solderreflowplate.co.uk) to know when it is available to buy!
-- There is a worldwide shortage of ATmega328p Microcontrollers. I'm currently working on a small redesign for a more readily available chip.
-- Purchase will be available soon!
 
 ## License
 
 All parts of this project are covered by a [MIT license](LICENSE).
 That means it is entirely open-source, so you get access to everything! (just without warranty or liability)
-Feel free to download, customise, hack, and commercialise to your nerdy heart's content.
-
-Want the **easy** life?!
-**Purchase** the default design above!
-Its fully functional, cheaper than customising, and helps to feed the creator's caffeine addiction 🙃

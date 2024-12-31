@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Solder-Reflow-Plate")(type "KiCad")(uri "$(KIPRJMOD)/Solder-Reflow-Plate.pretty")(options "")(descr ""))
+)
