@@ -4633,6 +4633,102 @@
 				)
 			)
 		)
+		(symbol "power:GND"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 	)
 	(junction
 		(at 91.44 156.21)
@@ -7676,6 +7772,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 252.73 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00334363-20cf-4ee6-aac1-9dc3179ff295")
+		(property "Reference" "#PWR011"
+			(at 252.73 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 252.73 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 252.73 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 252.73 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 252.73 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5279da62-54e0-42a6-8c5e-4b31a434873b")
+		)
+		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Solder-Ref-easyedapro:5V+")
 		(at 313.69 142.24 0)
 		(unit 1)
@@ -7684,7 +7846,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "08410c9d-327e-471b-aa77-40ee090f38e7")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR029"
 			(at 313.69 142.24 0)
 			(effects
 				(font
@@ -7734,6 +7896,12 @@
 			(uuid "46b4583a-17de-49a3-81a7-20ee1754cb02")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "#PWR?")
@@ -7751,7 +7919,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "08ee24f2-6af8-4917-8d4d-d5bfc5e1441b")
-		(property "Reference" "12V"
+		(property "Reference" "12V1"
 			(at 78.8924 86.2584 0)
 			(effects
 				(font
@@ -7872,76 +8040,15 @@
 			(uuid "6e41dd7f-14ad-46dd-97d8-2f0743be4071")
 		)
 		(instances
-			(project ""
-				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
-					(reference "12V")
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "12V1")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Solder-Ref-easyedapro:0V")
-		(at 231.14 168.91 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "118b7954-c780-44c1-a5e4-f23792248524")
-		(property "Reference" "#PWR?"
-			(at 231.14 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "0V"
-			(at 229.1842 174.371 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right top)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Solder-Ref-easyedapro:"
-			(at 231.14 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 231.14 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 231.14 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3beebae9-638a-4948-936b-697f7d8cab81")
-		)
-		(instances
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
-					(reference "#PWR?")
+					(reference "12V")
 					(unit 1)
 				)
 			)
@@ -7956,7 +8063,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "12596d05-7b3b-4935-a7a7-5779778a02fe")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR015"
 			(at 161.29 217.17 0)
 			(effects
 				(font
@@ -8006,6 +8113,12 @@
 			(uuid "4f84a644-8ebb-4f29-a010-567ef40b0cec")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "#PWR?")
@@ -8023,7 +8136,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1e840432-452f-41c8-8dd6-33b024befd43")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR027"
 			(at 252.73 82.55 0)
 			(effects
 				(font
@@ -8073,6 +8186,12 @@
 			(uuid "139c72c5-b40b-4537-87d0-c9c31818f6d1")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "#PWR027")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "#PWR?")
@@ -8090,7 +8209,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2270ce29-0792-47c3-b9c0-f10c121eb023")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR01"
 			(at 83.82 146.05 0)
 			(effects
 				(font
@@ -8140,6 +8259,12 @@
 			(uuid "06a9ce3c-0d64-4991-88a1-2d3a19cd96c4")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "#PWR?")
@@ -8149,16 +8274,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Solder-Ref-easyedapro:0V")
-		(at 313.69 156.21 180)
+		(lib_id "power:GND")
+		(at 204.47 186.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "2a588d8d-a076-4eb2-8b4b-302ffcbb4c2a")
-		(property "Reference" "#PWR?"
-			(at 313.69 156.21 0)
+		(fields_autoplaced yes)
+		(uuid "2280ec2d-23a5-4b43-92ab-866de0d31a80")
+		(property "Reference" "#PWR018"
+			(at 204.47 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8166,18 +8292,16 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "0V"
-			(at 311.7342 161.671 0)
+		(property "Value" "GND"
+			(at 204.47 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right top)
-				(hide yes)
 			)
 		)
-		(property "Footprint" "Solder-Ref-easyedapro:"
-			(at 313.69 156.21 0)
+		(property "Footprint" ""
+			(at 204.47 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8186,7 +8310,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 313.69 156.21 0)
+			(at 204.47 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8194,8 +8318,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 313.69 156.21 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 204.47 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8204,28 +8328,29 @@
 			)
 		)
 		(pin "1"
-			(uuid "6082010e-578c-48e3-8883-f8de1bfb7e84")
+			(uuid "4020b465-825f-4da2-a041-74b15345d121")
 		)
 		(instances
-			(project ""
-				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
-					(reference "#PWR?")
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Solder-Ref-easyedapro:0V")
-		(at 149.86 237.49 180)
+		(lib_id "power:GND")
+		(at 332.74 119.38 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "2d16fc56-31cf-469d-9bad-a656c3379211")
-		(property "Reference" "#PWR?"
-			(at 149.86 237.49 0)
+		(fields_autoplaced yes)
+		(uuid "2c8ce290-8b44-4118-9d6c-ca8f6b01ade8")
+		(property "Reference" "#PWR031"
+			(at 332.74 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8233,18 +8358,16 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "0V"
-			(at 147.9042 242.951 0)
+		(property "Value" "GND"
+			(at 332.74 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right top)
-				(hide yes)
 			)
 		)
-		(property "Footprint" "Solder-Ref-easyedapro:"
-			(at 149.86 237.49 0)
+		(property "Footprint" ""
+			(at 332.74 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8253,7 +8376,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 149.86 237.49 0)
+			(at 332.74 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8261,8 +8384,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 149.86 237.49 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 332.74 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8271,12 +8394,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "f87bad10-a5dc-477c-8a16-008d2658c313")
+			(uuid "1bcebbfa-4c5c-4887-a6ad-c7b5ea991a65")
 		)
 		(instances
-			(project ""
-				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
-					(reference "#PWR?")
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -8291,7 +8414,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2fafce7d-4a14-457d-820a-4a9a44f367db")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR05"
 			(at 106.68 138.43 0)
 			(effects
 				(font
@@ -8341,6 +8464,12 @@
 			(uuid "d7182c68-58e2-4862-967a-2d6282e14147")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "#PWR?")
@@ -8350,16 +8479,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Solder-Ref-easyedapro:0V")
-		(at 240.03 168.91 180)
+		(lib_id "power:GND")
+		(at 133.35 190.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "37d9fc8e-95da-426f-9a6b-50dd3a63bbfc")
-		(property "Reference" "#PWR?"
-			(at 240.03 168.91 0)
+		(fields_autoplaced yes)
+		(uuid "384f8a30-65e6-4497-8f78-cb4e5ccd4cef")
+		(property "Reference" "#PWR09"
+			(at 133.35 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8367,18 +8497,16 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "0V"
-			(at 238.1504 174.9552 0)
+		(property "Value" "GND"
+			(at 133.35 195.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right top)
-				(hide yes)
 			)
 		)
-		(property "Footprint" "Solder-Ref-easyedapro:"
-			(at 240.03 168.91 0)
+		(property "Footprint" ""
+			(at 133.35 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8387,7 +8515,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 240.03 168.91 0)
+			(at 133.35 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8395,8 +8523,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 240.03 168.91 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 133.35 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8405,12 +8533,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "fc0ada2d-a0b4-4d6d-b036-418978cac58a")
+			(uuid "e1f9140b-b15e-4feb-b5ee-395343b5c96a")
 		)
 		(instances
-			(project ""
-				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
-					(reference "#PWR?")
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -8425,7 +8553,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "39e43d95-9f47-40bb-8b83-67fc6fc118a9")
-		(property "Reference" "UC"
+		(property "Reference" "UC1"
 			(at 155.956 130.6576 0)
 			(effects
 				(font
@@ -8633,6 +8761,12 @@
 			(uuid "95e9731d-47f6-4303-bf58-d9d08b5b1c6b")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "UC1")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "UC")
@@ -8650,7 +8784,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3beac1a1-53aa-425b-afa6-4b3acb67fe1d")
-		(property "Reference" "C7"
+		(property "Reference" "C16"
 			(at 312.42 93.8784 90)
 			(effects
 				(font
@@ -8768,6 +8902,12 @@
 			(uuid "458b6ee7-fde4-4627-b890-24da3a5f51bd")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "C16")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "C7")
@@ -8785,7 +8925,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3c66e8d0-b5db-4fd2-9d3c-ecfd857894c5")
-		(property "Reference" "TEMP"
+		(property "Reference" "TEMP1"
 			(at 342.138 143.2052 0)
 			(effects
 				(font
@@ -8906,6 +9046,12 @@
 			(uuid "f08d8fd8-e6f3-4cfd-b560-943ef295d185")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "TEMP1")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "TEMP")
@@ -8923,7 +9069,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3f00049d-ea59-4dc9-b7d9-8a3e51f3304d")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR025"
 			(at 240.03 82.55 0)
 			(effects
 				(font
@@ -8973,6 +9119,12 @@
 			(uuid "92fdf591-976c-4c9f-96e0-3d8bb3d382f3")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "#PWR?")
@@ -8982,16 +9134,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Solder-Ref-easyedapro:0V")
-		(at 179.07 237.49 180)
+		(lib_id "power:GND")
+		(at 219.71 231.14 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "41bf4c2a-9ac3-4630-a8de-5112836d1692")
-		(property "Reference" "#PWR?"
-			(at 179.07 237.49 0)
+		(fields_autoplaced yes)
+		(uuid "419d7057-27f3-43c9-a6d6-d84779f9cdd0")
+		(property "Reference" "#PWR023"
+			(at 219.71 237.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8999,18 +9152,16 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "0V"
-			(at 177.1142 242.951 0)
+		(property "Value" "GND"
+			(at 219.71 236.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right top)
-				(hide yes)
 			)
 		)
-		(property "Footprint" "Solder-Ref-easyedapro:"
-			(at 179.07 237.49 0)
+		(property "Footprint" ""
+			(at 219.71 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9019,7 +9170,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 179.07 237.49 0)
+			(at 219.71 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9027,8 +9178,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 179.07 237.49 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 219.71 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9037,12 +9188,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "41c11686-b05c-455d-ad71-a1b859bcb77f")
+			(uuid "0e5e1da1-a022-4acc-a790-7ff9b576aa48")
 		)
 		(instances
-			(project ""
-				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
-					(reference "#PWR?")
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -9057,7 +9208,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "45be8577-d300-4e86-b8e4-8aceecb5c98e")
-		(property "Reference" "C10"
+		(property "Reference" "C1"
 			(at 90.17 137.5156 0)
 			(effects
 				(font
@@ -9175,9 +9326,81 @@
 			(uuid "c784abf8-1e13-44ad-8595-691fda23537b")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "C1")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 231.14 168.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "492f1a1e-e880-463d-9955-fc37ec3dbf75")
+		(property "Reference" "#PWR024"
+			(at 231.14 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 231.14 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 231.14 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 231.14 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 231.14 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e5417d0e-8ded-4902-93ce-8568952f0327")
+		)
+		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -9192,7 +9415,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "516237a5-0a5f-4630-b25e-da6511cc35cf")
-		(property "Reference" "D3"
+		(property "Reference" "D2"
 			(at 143.256 83.7184 0)
 			(effects
 				(font
@@ -9310,76 +9533,15 @@
 			(uuid "c116dd8c-46e1-4d57-b190-730a4bbf33c6")
 		)
 		(instances
-			(project ""
-				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
-					(reference "D3")
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "D2")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Solder-Ref-easyedapro:0V")
-		(at 332.74 156.21 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "51b2abd6-b449-44a1-8352-acc9718aa9c9")
-		(property "Reference" "#PWR?"
-			(at 332.74 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "0V"
-			(at 330.7842 161.671 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right top)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Solder-Ref-easyedapro:"
-			(at 332.74 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 332.74 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 332.74 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3eed3c1c-3f39-440c-ab1e-d4855a2dfe41")
-		)
-		(instances
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
-					(reference "#PWR?")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -9394,7 +9556,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5871d238-02f4-4648-8d59-0cb34314431e")
-		(property "Reference" "C16"
+		(property "Reference" "C5"
 			(at 120.396 179.451 0)
 			(effects
 				(font
@@ -9512,6 +9674,12 @@
 			(uuid "be396611-353e-4192-97c3-a0edfa215965")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "C5")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "C16")
@@ -9529,7 +9697,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "589bab8c-b99d-4974-9da9-58ccfc2cd540")
-		(property "Reference" "C9"
+		(property "Reference" "C17"
 			(at 305.1556 151.0284 90)
 			(effects
 				(font
@@ -9647,76 +9815,15 @@
 			(uuid "bee3ee08-95bd-4687-81fc-a913c91d70f3")
 		)
 		(instances
-			(project ""
-				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
-					(reference "C9")
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "C17")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Solder-Ref-easyedapro:0V")
-		(at 219.71 231.14 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5926c6f8-7b75-4d9c-9317-b16e0f834c81")
-		(property "Reference" "#PWR?"
-			(at 219.71 231.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "0V"
-			(at 217.7542 236.601 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right top)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Solder-Ref-easyedapro:"
-			(at 219.71 231.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 219.71 231.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 219.71 231.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cbf58795-0083-4306-af04-3c6d8ad89f3c")
-		)
-		(instances
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
-					(reference "#PWR?")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -9731,7 +9838,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5d728edc-be09-47c8-8d0e-5c6d90e48e16")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR04"
 			(at 101.6 173.99 0)
 			(effects
 				(font
@@ -9781,6 +9888,12 @@
 			(uuid "42853328-3618-4bd5-8ee3-d451a249ad22")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "#PWR?")
@@ -9798,7 +9911,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6123f7ce-b9f9-42f4-be12-7e29c8e9d408")
-		(property "Reference" "DNSW"
+		(property "Reference" "DNSW1"
 			(at 167.64 220.0656 90)
 			(effects
 				(font
@@ -9928,6 +10041,12 @@
 			(uuid "e12756d6-83ca-4e07-a370-2c80ee17ec56")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "DNSW1")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "DNSW")
@@ -9946,7 +10065,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "62fa55a0-e937-42f2-83b2-cdf66452e3e1")
-		(property "Reference" "R7"
+		(property "Reference" "R5"
 			(at 208.534 137.0584 90)
 			(effects
 				(font
@@ -10064,6 +10183,12 @@
 			(uuid "9b5c4de3-c93b-4669-a0d6-52e5da084697")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "R5")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "R7")
@@ -10081,7 +10206,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "645f3b4d-141d-4d05-afcf-aeb53b29fb66")
-		(property "Reference" "R6"
+		(property "Reference" "R4"
 			(at 168.656 238.6838 0)
 			(effects
 				(font
@@ -10199,6 +10324,12 @@
 			(uuid "4abea621-bd5b-4988-adb6-92249c7ca8b1")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "R4")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "R6")
@@ -10216,7 +10347,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "67960973-46a0-431d-bcde-db2d142acdac")
-		(property "Reference" "C14"
+		(property "Reference" "C11"
 			(at 218.7956 162.9156 0)
 			(effects
 				(font
@@ -10334,6 +10465,12 @@
 			(uuid "fd659679-234e-4e2e-bdbd-07fc1ff0d6dc")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "C11")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "C14")
@@ -10469,6 +10606,12 @@
 			(uuid "2e586489-3913-4194-b95c-1dfead5d8cf3")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "D1")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "D1")
@@ -10486,7 +10629,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6ba63eaa-3b33-42cc-93fe-26f0999bd50e")
-		(property "Reference" "C17"
+		(property "Reference" "C6"
 			(at 120.396 189.611 0)
 			(effects
 				(font
@@ -10604,6 +10747,12 @@
 			(uuid "160241be-2a0d-4fa1-a5e3-09a6af3fa43c")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "C6")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "C17")
@@ -10621,7 +10770,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6e3d3104-fdd0-4052-b6f5-a976c18dbc76")
-		(property "Reference" "C15"
+		(property "Reference" "C9"
 			(at 218.44 137.1092 90)
 			(effects
 				(font
@@ -10739,6 +10888,12 @@
 			(uuid "7fcc7233-3c14-46b5-a700-ee9c34c9d462")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "C9")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "C15")
@@ -10756,7 +10911,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7153587f-66c6-4c85-96a6-045358c7be7d")
-		(property "Reference" "C4"
+		(property "Reference" "C12"
 			(at 232.41 97.7138 90)
 			(effects
 				(font
@@ -10874,6 +11029,12 @@
 			(uuid "a703633e-e57f-4c1e-87f4-ff67bac32a46")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "C12")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "C4")
@@ -10891,7 +11052,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "738c3ef2-2a3e-41b5-b752-10e04f6b0040")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR02"
 			(at 91.44 173.99 0)
 			(effects
 				(font
@@ -10941,6 +11102,12 @@
 			(uuid "6b80d1ed-3241-4412-b35b-36b0a50a9dc4")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "#PWR?")
@@ -10958,7 +11125,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "746ce225-9a00-4c0b-8f83-1b19c2646702")
-		(property "Reference" "R1"
+		(property "Reference" "R2"
 			(at 155.9306 82.6516 0)
 			(effects
 				(font
@@ -11076,6 +11243,12 @@
 			(uuid "e04be6d8-51dc-43f1-bfa9-03c58f663ebc")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "R2")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "R1")
@@ -11093,7 +11266,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "75a5dd23-e544-403b-913a-e12ab9355385")
-		(property "Reference" "R5"
+		(property "Reference" "R1"
 			(at 139.446 238.6838 0)
 			(effects
 				(font
@@ -11211,6 +11384,12 @@
 			(uuid "a2bdb502-f73a-4dc0-b6ac-69ed91f50384")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "R1")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "R5")
@@ -11228,7 +11407,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7859e2d1-acb7-4cc0-bca8-f6b0a825a3ab")
-		(property "Reference" "MOSFET"
+		(property "Reference" "MOSFET1"
 			(at 336.55 106.5784 0)
 			(effects
 				(font
@@ -11349,6 +11528,12 @@
 			(uuid "e5290820-e36c-426d-8400-0856b1a5937f")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "MOSFET1")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "MOSFET")
@@ -11366,7 +11551,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7bd0ee48-b91f-4d26-b0e5-9d4d04fececf")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR019"
 			(at 207.01 129.54 0)
 			(effects
 				(font
@@ -11416,6 +11601,12 @@
 			(uuid "23af98e6-be05-4bbe-9c38-dfcf80552845")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "#PWR?")
@@ -11433,7 +11624,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8156588e-350c-4099-bd95-b56a8069421d")
-		(property "Reference" "UPSW"
+		(property "Reference" "UPSW1"
 			(at 138.43 220.0656 90)
 			(effects
 				(font
@@ -11563,6 +11754,12 @@
 			(uuid "47084f46-1966-4759-b3eb-bdd007b74dc0")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "UPSW1")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "UPSW")
@@ -11580,7 +11777,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8171c81b-84cd-4bcb-823f-6e1c43ceca82")
-		(property "Reference" "C13"
+		(property "Reference" "C3"
 			(at 104.14 168.8084 90)
 			(effects
 				(font
@@ -11698,6 +11895,12 @@
 			(uuid "2ee770cf-88a6-426c-a606-d317c6420ffc")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "C3")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "C13")
@@ -11715,7 +11918,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "868a8eab-36f8-42e8-9993-ce962b03e9ac")
-		(property "Reference" "ICSP"
+		(property "Reference" "ICSP1"
 			(at 95.0214 218.3384 0)
 			(effects
 				(font
@@ -11845,6 +12048,12 @@
 			(uuid "4d25d50c-7822-4129-acf8-b3f4b18b2d5f")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "ICSP1")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "ICSP")
@@ -11862,7 +12071,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "874cc59d-ebaf-4e57-9d59-d9b67d62744c")
-		(property "Reference" "5V"
+		(property "Reference" "5V1"
 			(at 192.8368 83.7438 0)
 			(effects
 				(font
@@ -11983,9 +12192,81 @@
 			(uuid "92f187c5-cce2-42dc-91b3-0814a4fec65a")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "5V1")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "5V")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 143.51 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8f54eabd-3cae-4362-8466-73f30322ac4e")
+		(property "Reference" "#PWR035"
+			(at 143.51 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 143.51 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 143.51 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 143.51 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "761da53b-aa62-4937-9869-5a9bf4bb2e65")
+		)
+		(instances
+			(project ""
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -12000,7 +12281,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "907e6ff4-7e89-420b-82c5-ee64665045ed")
-		(property "Reference" "R2"
+		(property "Reference" "R3"
 			(at 155.9306 97.8916 0)
 			(effects
 				(font
@@ -12118,6 +12399,12 @@
 			(uuid "a658183c-f8a9-42a5-9e93-ad408ce0dd19")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "R3")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "R2")
@@ -12135,7 +12422,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "911b0aff-48fa-4355-b45b-b3b99f2d4459")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR08"
 			(at 132.08 217.17 0)
 			(effects
 				(font
@@ -12185,6 +12472,12 @@
 			(uuid "bbb5a373-1817-4bf0-82f0-aba415af454d")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "#PWR?")
@@ -12202,7 +12495,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "94dff018-d2c7-4c34-8a36-51cedf5d786e")
-		(property "Reference" "D2"
+		(property "Reference" "D3"
 			(at 323.596 93.8784 90)
 			(effects
 				(font
@@ -12320,6 +12613,12 @@
 			(uuid "543d1fd1-acc0-462b-b9ad-d510e3aa56c4")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "D3")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "D2")
@@ -12329,16 +12628,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Solder-Ref-easyedapro:0V")
-		(at 133.35 190.5 180)
+		(lib_id "power:GND")
+		(at 179.07 237.49 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "96e012cb-aee3-4947-9d02-03c16a41793e")
-		(property "Reference" "#PWR?"
-			(at 133.35 190.5 0)
+		(fields_autoplaced yes)
+		(uuid "99ab1d25-5a34-4262-9c94-a9399e469e95")
+		(property "Reference" "#PWR016"
+			(at 179.07 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12346,18 +12646,16 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "0V"
-			(at 131.3942 195.961 0)
+		(property "Value" "GND"
+			(at 179.07 242.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right top)
-				(hide yes)
 			)
 		)
-		(property "Footprint" "Solder-Ref-easyedapro:"
-			(at 133.35 190.5 0)
+		(property "Footprint" ""
+			(at 179.07 237.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12366,7 +12664,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 133.35 190.5 0)
+			(at 179.07 237.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12374,8 +12672,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 133.35 190.5 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 179.07 237.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12384,12 +12682,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "4e578e7a-dd45-4b75-b0ee-97b3165f9b92")
+			(uuid "3301a0bf-fca0-4856-ad8e-d39c8d3f11f6")
 		)
 		(instances
-			(project ""
-				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
-					(reference "#PWR?")
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -12404,7 +12702,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9d960304-7f6d-466c-93a2-818a16354a03")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR06"
 			(at 107.95 219.71 0)
 			(effects
 				(font
@@ -12454,73 +12752,12 @@
 			(uuid "144e2b0f-c407-4bf7-a642-a79f72ad1a89")
 		)
 		(instances
-			(project ""
-				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
-					(reference "#PWR?")
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Solder-Ref-easyedapro:0V")
-		(at 252.73 105.41 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9de7492c-ffff-4353-93cc-0a48a8fbdf66")
-		(property "Reference" "#PWR?"
-			(at 252.73 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "0V"
-			(at 250.7742 110.871 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right top)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Solder-Ref-easyedapro:"
-			(at 252.73 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 252.73 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 252.73 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4fc84b38-b269-4d22-9415-0f6b36859681")
-		)
-		(instances
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "#PWR?")
@@ -12539,7 +12776,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9f8def42-a3f5-46a6-b61c-1dac32a19a9a")
-		(property "Reference" "R4"
+		(property "Reference" "R6"
 			(at 325.374 112.9284 90)
 			(effects
 				(font
@@ -12657,6 +12894,12 @@
 			(uuid "ba129d29-6bbe-45f6-b9ea-d751b24eb1b4")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "R6")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "R4")
@@ -12674,7 +12917,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a6b59ac5-ad62-4141-958d-a2e0a9ff07aa")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR014"
 			(at 152.4 217.17 0)
 			(effects
 				(font
@@ -12724,73 +12967,12 @@
 			(uuid "c58d28a7-9546-4c65-aaaf-af1d06c99341")
 		)
 		(instances
-			(project ""
-				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
-					(reference "#PWR?")
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Solder-Ref-easyedapro:0V")
-		(at 107.95 229.87 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a9b14795-138e-4b19-9689-f9632c27c54b")
-		(property "Reference" "#PWR?"
-			(at 107.95 229.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "0V"
-			(at 105.9942 235.331 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right top)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Solder-Ref-easyedapro:"
-			(at 107.95 229.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 107.95 229.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 107.95 229.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e1917bc4-c1ef-41a8-a0cc-e58ad50213b6")
-		)
-		(instances
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "#PWR?")
@@ -12808,7 +12990,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b0da3ccf-a022-4aef-9355-72ed73ef7f69")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR013"
 			(at 151.13 82.55 0)
 			(effects
 				(font
@@ -12858,6 +13040,12 @@
 			(uuid "a6e957cf-ec48-4c8b-ba56-78dc9905d7b9")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "#PWR?")
@@ -12875,7 +13063,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b128cb07-4f7d-4429-9080-3a892cdfd053")
-		(property "Reference" "C2"
+		(property "Reference" "C4"
 			(at 121.158 95.1738 0)
 			(effects
 				(font
@@ -12993,6 +13181,12 @@
 			(uuid "17f36a3f-e278-43b9-b195-aae3cec1688e")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "C4")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "C2")
@@ -13010,7 +13204,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b189b8ed-b5e6-4234-9d2e-e40ea206f33e")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR032"
 			(at 332.74 85.09 0)
 			(effects
 				(font
@@ -13060,6 +13254,12 @@
 			(uuid "7d508dd5-5b18-4c0d-add3-df9aa3f0fa24")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "#PWR032")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "#PWR?")
@@ -13077,7 +13277,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b2302356-b99d-4e43-8330-941fcb11f0c5")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR022"
 			(at 219.71 217.17 0)
 			(effects
 				(font
@@ -13127,6 +13327,12 @@
 			(uuid "acdd2bff-d8b1-4904-a459-5ba2e178b500")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "#PWR?")
@@ -13144,7 +13350,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b633e2ed-d619-431e-8c9b-91ce1facfcbb")
-		(property "Reference" "C1"
+		(property "Reference" "C7"
 			(at 133.35 95.1738 90)
 			(effects
 				(font
@@ -13262,6 +13468,12 @@
 			(uuid "e0f2e94b-d011-4a15-99c5-c6e6d6ab473c")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "C7")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "C1")
@@ -13279,7 +13491,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b93790bc-a6ac-4666-ac93-9d52c86feed2")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR020"
 			(at 210.82 166.37 0)
 			(effects
 				(font
@@ -13329,6 +13541,12 @@
 			(uuid "2408c9e6-445c-4e63-beee-33cdedd7105f")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "#PWR?")
@@ -13346,7 +13564,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b9457a2d-fce0-4191-85f1-4fbc5b01355b")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR010"
 			(at 135.89 82.55 0)
 			(effects
 				(font
@@ -13396,73 +13614,12 @@
 			(uuid "4844baf4-58ec-4311-84b6-8638ec039f4a")
 		)
 		(instances
-			(project ""
-				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
-					(reference "#PWR?")
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Solder-Ref-easyedapro:0V")
-		(at 204.47 186.69 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "bacd8788-84d7-4f61-82ff-2398c2901c61")
-		(property "Reference" "#PWR?"
-			(at 204.47 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "0V"
-			(at 202.5142 192.151 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right top)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Solder-Ref-easyedapro:"
-			(at 204.47 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 204.47 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 204.47 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "89131465-7e8e-4821-b9fd-b7b3638ac570")
-		)
-		(instances
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "#PWR?")
@@ -13480,7 +13637,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bb5bc07b-ad82-4516-917b-a2db64100f4b")
-		(property "Reference" "C19"
+		(property "Reference" "C13"
 			(at 242.57 165.0238 90)
 			(effects
 				(font
@@ -13598,9 +13755,147 @@
 			(uuid "4f5c1ea9-8695-4da3-af94-7fd6744f0390")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "C13")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "C19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 240.03 168.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bcc1625f-01e3-4500-a14d-d5f23ab5b85c")
+		(property "Reference" "#PWR026"
+			(at 240.03 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 240.03 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 240.03 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 240.03 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5fdd781f-a639-4365-8df4-8fd3594dc750")
+		)
+		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 313.69 156.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "be5a7814-4262-4795-94de-e8986822bb3a")
+		(property "Reference" "#PWR030"
+			(at 313.69 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 313.69 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 313.69 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 313.69 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 313.69 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1c2b61a8-ee80-4239-b639-d9e4ebed831b")
+		)
+		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -13615,7 +13910,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c4a1b61b-bc8f-4367-b316-4f4850047721")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR03"
 			(at 100.33 138.43 0)
 			(effects
 				(font
@@ -13665,73 +13960,12 @@
 			(uuid "3da6660d-76f7-45bb-aa33-f8b665908553")
 		)
 		(instances
-			(project ""
-				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
-					(reference "#PWR?")
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Solder-Ref-easyedapro:0V")
-		(at 143.51 104.14 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "cb7a470b-826c-46bc-bfbb-c3c5dea9fd51")
-		(property "Reference" "#PWR?"
-			(at 143.51 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "0V"
-			(at 141.5542 109.601 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right top)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Solder-Ref-easyedapro:"
-			(at 143.51 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 143.51 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 143.51 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7a9a92f3-cbdf-4091-b716-31796d6f9ccd")
-		)
-		(instances
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "#PWR?")
@@ -13749,7 +13983,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cff67c36-d8c9-4034-aded-b30fffe80524")
-		(property "Reference" "C3"
+		(property "Reference" "C10"
 			(at 220.98 99.0092 90)
 			(effects
 				(font
@@ -13867,6 +14101,12 @@
 			(uuid "fe6335aa-4ab2-44de-921b-10f8e6dddf40")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "C10")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "C3")
@@ -13876,16 +14116,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Solder-Ref-easyedapro:0V")
-		(at 323.85 119.38 180)
+		(lib_id "power:GND")
+		(at 149.86 237.49 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "d2217014-b3ba-41bf-8a09-0f635c595364")
-		(property "Reference" "#PWR?"
-			(at 323.85 119.38 0)
+		(fields_autoplaced yes)
+		(uuid "d34787bd-e40c-42d9-b0ec-7005ccd563dc")
+		(property "Reference" "#PWR012"
+			(at 149.86 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13893,18 +14134,16 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "0V"
-			(at 320.6242 124.841 0)
+		(property "Value" "GND"
+			(at 149.86 242.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right top)
-				(hide yes)
 			)
 		)
-		(property "Footprint" "Solder-Ref-easyedapro:"
-			(at 323.85 119.38 0)
+		(property "Footprint" ""
+			(at 149.86 237.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13913,7 +14152,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 323.85 119.38 0)
+			(at 149.86 237.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13921,8 +14160,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 323.85 119.38 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 149.86 237.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13931,12 +14170,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "0ec181b0-d27a-4b1b-979c-fd4adcc1390f")
+			(uuid "d683d7e0-ea4e-489c-9b21-d29cbe6f6567")
 		)
 		(instances
-			(project ""
-				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
-					(reference "#PWR?")
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -13951,7 +14190,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d3e630bb-7dbb-44f5-95ca-efec7da8eaf9")
-		(property "Reference" "C18"
+		(property "Reference" "C8"
 			(at 213.36 180.2892 90)
 			(effects
 				(font
@@ -14069,6 +14308,12 @@
 			(uuid "750aadf5-bfef-4433-b3b1-cd76d29c6084")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "C8")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "C18")
@@ -14086,7 +14331,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d7954709-c51e-4d1a-a4cd-35596bb1e0ae")
-		(property "Reference" "C12"
+		(property "Reference" "C2"
 			(at 93.98 168.8084 90)
 			(effects
 				(font
@@ -14204,9 +14449,147 @@
 			(uuid "97ba36a4-6095-4ce0-bf33-42dc8f583e93")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "C2")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 323.85 119.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d99c27ce-3be5-46dd-bbb8-059dadd01c97")
+		(property "Reference" "#PWR028"
+			(at 323.85 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 323.85 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 323.85 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 323.85 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 323.85 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bfa77e0d-ea66-4a1c-85a1-c49fa1730a89")
+		)
+		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 107.95 229.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e043616b-c990-48af-9141-c5267520f2a9")
+		(property "Reference" "#PWR07"
+			(at 107.95 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 107.95 234.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 107.95 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 107.95 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 107.95 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "30eb27ab-3330-4868-b3b8-6839ca28ee74")
+		)
+		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -14221,7 +14604,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ebae8839-6dd9-41d5-93bf-9fe27be3d9f2")
-		(property "Reference" "C5"
+		(property "Reference" "C14"
 			(at 245.11 99.0092 90)
 			(effects
 				(font
@@ -14339,6 +14722,12 @@
 			(uuid "a56560fc-9383-4796-809e-ad968defa533")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "C14")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "C5")
@@ -14356,7 +14745,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f045786b-8dd5-4842-b356-3dce0b4f57ea")
-		(property "Reference" "OLED"
+		(property "Reference" "OLED1"
 			(at 225.7044 215.8238 0)
 			(effects
 				(font
@@ -14471,6 +14860,12 @@
 			(uuid "ac6a1cf3-3b87-468a-9d7f-74e321875547")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "OLED1")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "OLED")
@@ -14488,7 +14883,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f1c7b738-8452-4135-9385-0e43a3ffe231")
-		(property "Reference" "C6"
+		(property "Reference" "C15"
 			(at 255.27 97.7138 90)
 			(effects
 				(font
@@ -14606,76 +15001,15 @@
 			(uuid "0b3f0feb-ba52-4721-8a5a-ade9ea05da09")
 		)
 		(instances
-			(project ""
-				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
-					(reference "C6")
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "C15")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Solder-Ref-easyedapro:0V")
-		(at 332.74 119.38 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f849caed-2f7c-4c91-a9ae-b0e6268c4e7d")
-		(property "Reference" "#PWR?"
-			(at 332.74 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "0V"
-			(at 330.7842 124.841 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right top)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Solder-Ref-easyedapro:"
-			(at 332.74 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 332.74 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 332.74 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "06134a07-d83c-437b-bd93-53a228e187d6")
-		)
-		(instances
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
-					(reference "#PWR?")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -14690,7 +15024,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fb9ea752-cd84-48e8-bbb2-498198c24f81")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR021"
 			(at 215.9 129.54 0)
 			(effects
 				(font
@@ -14740,6 +15074,12 @@
 			(uuid "a63a52d5-3bbf-46af-b01c-af41a771496a")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "#PWR021")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "#PWR?")
@@ -14757,7 +15097,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fbb4fd90-046d-4568-8fd2-35d27f3421ad")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR017"
 			(at 181.61 217.17 0)
 			(effects
 				(font
@@ -14807,12 +15147,89 @@
 			(uuid "473dc27c-69a0-4577-ada4-b514b99a14d1")
 		)
 		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/86bad56d-0501-4a63-9ab2-ea8af429c513"
 					(reference "#PWR?")
 					(unit 1)
 				)
 			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 332.74 156.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fdbffa5c-6e3e-4631-932a-3527d8248494")
+		(property "Reference" "#PWR033"
+			(at 332.74 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 332.74 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 332.74 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 332.74 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 332.74 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3fbdd372-e506-4928-b7ef-f4bc1534a2ab")
+		)
+		(instances
+			(project "Solder-Reflow-Plate"
+				(path "/24e98786-0cd2-416c-b3a4-1060e1e021a3"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
 		)
 	)
 )

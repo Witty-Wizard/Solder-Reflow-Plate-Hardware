@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [],
@@ -577,7 +577,7 @@
   "sheets": [
     [
       "24e98786-0cd2-416c-b3a4-1060e1e021a3",
-      "(NEW) SRP 70*50mm"
+      "Root"
     ]
   ],
   "text_variables": {}
